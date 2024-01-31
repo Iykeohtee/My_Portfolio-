@@ -16,13 +16,13 @@ const Header = () => {
     } 
   }
   return (
-    <div className='app__header app__flex'>
+    <div id='home' className='app__header app__flex'>
       <motion.div
        whileInView={{ x: [-100, 0 ], opacity: [ 0, 1 ]}}
        transition={{ duration: 0.8 }}
        className='app__header-info'
       >
-       <div app__header-badge>
+       <div className='app__header-badge'>
          <div className='badge-cmp app__flex'>
            <span>👋</span>
            <div style={{ marginLeft: 20}}>
@@ -59,10 +59,10 @@ const Header = () => {
 
       <motion.div
        variants={scaleVariants}
-       whileInView={scaleVariants.whileInView}
-       className='app__headers-circles'
+       whileInView={scaleVariants.whileInView}   
+       className='app__header-circles'
       >
-        {[ images.figma, images.redux, images.sass].map((circle, index) => (
+        {[ images.react, images.redux, images.sass].map((circle, index) => (
           <div className='cirlce-cmp app__flex' key={`circle-${index}`}> 
             <img src={circle} alt="circle" />
           </div>
