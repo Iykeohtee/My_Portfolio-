@@ -49,7 +49,7 @@ const Header = () => {
         <img src={images.profile} alt="profile_bg" />
         <motion.img
          whileInView={{ scale: [ 0, 1 ] }}
-         transition={{ duration: 1, ease: 'easeInOut' }} 
+         transition={{ duration: 1, ease: 'easeInOut' }}    
          className='overlay_circle'
          src={images.circle}
          alt='profile_circle' 
@@ -64,7 +64,7 @@ const Header = () => {
       >
         {[ images.react, images.redux, images.sass].map((circle, index) => (
           <div className='cirlce-cmp app__flex' key={`circle-${index}`}> 
-            <img src={circle} alt="circle" />
+            <img src={circle} alt="circle" />  
           </div>
         ))}
       </motion.div>
